@@ -104,4 +104,29 @@ var Client = module.exports = function (config) {
             }
         });
     }
+
+    this.notifyPublish = function (ids, callback) {
+        var path = '/notify/publish';
+        self.post(path, {icons: ids.toString()}, callback);
+    }
+
+    this.post = function(path, data, callback) {
+
+        var url = baseUrl + path;
+
+        request.post({
+            url: url,
+            oauth: oauth,
+            body: JSON.stringify(data)
+        }, function (err, response, body) {
+            if (err) {
+                callback(new Error('Noun Project API: ' + err));
+            } else if (response.statusCode !== 200) {
+                console.log(err, body)
+                callback(response.statusCode + ' HTTP response code');
+            } else {
+                callback(null, JSON.parse(body));
+            }
+        });
+    }
 }

@@ -10,12 +10,12 @@ Installation
 ------------
 Simply add to your project with
 ````bash
-npm install --save the-noun-project
+npm install --save the-noun-project-enterprise
 ````
 
 In your project file:
 ````javascript
-var NounProject = require('the-noun-project'),
+var NounProject = require('the-noun-project-enterprise'),
 nounProject = new NounProject({
     key: 'foo',
     secret: 'bar'

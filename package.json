@@ -1,6 +1,6 @@
 {
-  "name": "the-noun-project",
-  "version": "2.0.2",
+  "name": "the-noun-project-enterprise",
+  "version": "1.0.0",
   "description": "Node.js wrapper for The Noun Project's API",
   "main": "nounproject.js",
   "scripts": {
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rosshettel/the-noun-project"
+    "url": "https://github.com/rosshettel/the-noun-project-enterprise"
   },
   "keywords": [
     "noun",
     "project",
     "api"
   ],
-  "author": "Ross Hettel",
+  "author": "Ross Hettel, Marta Bondyra",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rosshettel/the-noun-project/issues"
+    "url": "https://github.com/mbondyra/the-noun-project-enterprise/issues"
   },
-  "homepage": "https://github.com/rosshettel/the-noun-project",
+  "homepage": "https://github.com/mbondyra/the-noun-project-enterprise",
   "dependencies": {
     "mocha": "^5.2.0",
     "request": "^2.88.0"
